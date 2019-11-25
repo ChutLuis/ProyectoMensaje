@@ -1,0 +1,16 @@
+C:\Users\Luis\Source\Repos\MensajeApi\MensajeApi\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\Luis\Source\Repos\MensajeApi\MensajeApi\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\Luis\Source\Repos\MensajeApi\MensajeApi\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\Luis\Source\Repos\MensajeApi\MensajeApi\bin\Debug\netcoreapp3.0\MensajeApi.exe
+C:\Users\Luis\Source\Repos\MensajeApi\MensajeApi\obj\Debug\netcoreapp3.0\MensajeApi.csprojAssemblyReference.cache
+C:\Users\Luis\Source\Repos\MensajeApi\MensajeApi\obj\Debug\netcoreapp3.0\staticwebassets\MensajeApi.StaticWebAssets.Manifest.cache
+C:\Users\Luis\Source\Repos\MensajeApi\MensajeApi\obj\Debug\netcoreapp3.0\staticwebassets\MensajeApi.StaticWebAssets.xml
+C:\Users\Luis\Source\Repos\MensajeApi\MensajeApi\obj\Debug\netcoreapp3.0\MensajeApi.AssemblyInfoInputs.cache
+C:\Users\Luis\Source\Repos\MensajeApi\MensajeApi\obj\Debug\netcoreapp3.0\MensajeApi.AssemblyInfo.cs
+C:\Users\Luis\Source\Repos\MensajeApi\MensajeApi\obj\Debug\netcoreapp3.0\MensajeApi.RazorTargetAssemblyInfo.cache
+C:\Users\Luis\Source\Repos\MensajeApi\MensajeApi\obj\Debug\netcoreapp3.0\MensajeApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Luis\Source\Repos\MensajeApi\MensajeApi\bin\Debug\netcoreapp3.0\MongoDB.Bson.dll
+C:\Users\Luis\Source\Repos\MensajeApi\MensajeApi\obj\Debug\netcoreapp3.0\MensajeApi.csproj.CopyComplete
+C:\Users\Luis\Source\Repos\MensajeApi\MensajeApi\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Luis\Source\Repos\MensajeApi\MensajeApi\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+C:\Users\Luis\Source\Repos\MensajeApi\MensajeApi\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll

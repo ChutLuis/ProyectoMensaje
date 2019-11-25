@@ -40,6 +40,20 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.9.3, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.9.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
