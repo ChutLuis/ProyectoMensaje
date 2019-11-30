@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MensajeApi.Mensaje;
+using MensajeApi.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace MensajeApi.Controllers
 {
@@ -168,6 +170,43 @@ namespace MensajeApi.Controllers
 
 
             return Accepted(mensajesDescifrados);
+        }
+
+        [HttpGet("BuscarLlave")]
+        public ActionResult<List<SubmitMensaje>> BuscarLlave(string Llave, string UserName)
+        {            
+
+            List<Conversacion> ConversacionAObtener = _ConversacionService.Get(UserName);
+            List<SubmitMensaje> mensajesDescifrados = new List<SubmitMensaje>();
+
+            foreach (var item in ConversacionAObtener)
+            {
+                if (item.Mensajes != null)
+                {
+                    foreach (var item2 in item.Mensajes)
+                    {
+                        var inserted = _mensajeServices.Get(item2);
+                        mensajesDescifrados.Add(inserted);
+                    }
+                }
+                else
+                {
+                    return Ok(mensajesDescifrados);
+                }
+            }
+            List<SubmitMensaje> Filtrados = new List<SubmitMensaje>();
+
+            for (int i = 0; i < mensajesDescifrados.Count; i++)
+            {
+                if (mensajesDescifrados[i].Message.Contains(Llave))
+                {
+                    Filtrados.Add(mensajesDescifrados[i]);
+                }
+            }
+
+            
+           
+            return Ok(Filtrados);
         }
     }
 }

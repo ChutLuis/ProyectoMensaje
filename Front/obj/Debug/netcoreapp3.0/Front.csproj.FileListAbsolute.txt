@@ -145,3 +145,5 @@ C:\Users\Luis\Source\Repos\MensajeApi\Front\bin\Debug\netcoreapp3.0\System.Web.W
 C:\Users\Luis\Source\Repos\MensajeApi\Front\bin\Debug\netcoreapp3.0\System.Web.WebPages.dll
 C:\Users\Luis\Source\Repos\MensajeApi\Front\bin\Debug\netcoreapp3.0\Microsoft.Web.Infrastructure.dll
 C:\Users\Luis\Source\Repos\MensajeApi\Front\obj\Debug\netcoreapp3.0\Front.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Luis\Source\Repos\MensajeApi\Front\obj\Debug\netcoreapp3.0\Razor\Views\LogIn\BuscarMensaje.cshtml.g.cs
+C:\Users\Luis\Source\Repos\MensajeApi\Front\obj\Debug\netcoreapp3.0\Razor\Views\LogIn\BuscarMensaje2.cshtml.g.cs

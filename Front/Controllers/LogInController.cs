@@ -334,5 +334,42 @@ namespace Front.Controllers
 
             return View();
         }
+
+        public ActionResult BuscarMensaje()
+        {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult BuscarMensaje2(string Llave)
+        {
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(hostSettings.DireccionHost);
+                //HTTP POSt           
+                client.DefaultRequestHeaders.Authorization
+                           = new AuthenticationHeaderValue("Bearer", Token);
+                var Actual = JsonConvert.DeserializeObject<SubmitModel>(HttpContext.Session.GetString("User"));
+                var ResponseGet = client.GetAsync("/api/Conversation/BuscarLlave?Llave=" + Llave+"&UserName="+Actual.User);
+                var result = ResponseGet.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    var readTask = result.Content.ReadAsStringAsync();
+                    readTask.Wait();
+                    List<SubmitMensaje> model = JsonConvert.DeserializeObject<List<SubmitMensaje>>(readTask.Result);
+
+                    return View(model);
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Server error. Please contact administrator.");
+                }
+            }
+
+
+
+            return View();
+        }
+
     }
 }

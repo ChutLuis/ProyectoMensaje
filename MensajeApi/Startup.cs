@@ -73,7 +73,15 @@ namespace MensajeApi
             services.AddSingleton<IMensajeDatabaseSettings>(sp =>
             sp.GetRequiredService<IOptions<MensajeDatabaseSettings>>().Value);
 
-        
+            services.AddMvc()
+            .AddSessionStateTempDataProvider();
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromSeconds(360);
+                options.Cookie.HttpOnly = true;
+                // Make the session cookie essential
+                options.Cookie.IsEssential = true;
+            });
 
             services.AddSingleton<Conversacion>();
             services.AddSingleton<MensajeServices>();
@@ -98,7 +106,8 @@ namespace MensajeApi
                .AllowAnyOrigin()
                .AllowAnyMethod()
                .AllowAnyHeader());
-
+            app.UseSession();
+            //app.UseMvcWithDefaultRoute();
             app.UseAuthentication();
             app.UseAuthorization();
 

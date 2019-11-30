@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Front.Models.SubmitMensaje>
+
+@{
+    ViewData["Title"] = "BuscarMensaje2";
+}
+
+<h1>Mensajes Filtrados</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Message)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Emisor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaEnviado)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Message)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Emisor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaEnviado)
+            </td>           
+        </tr>
+}
+    </tbody>
+</table>
