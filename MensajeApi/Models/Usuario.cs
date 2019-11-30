@@ -19,9 +19,11 @@ namespace MensajeApi.Models
         [BsonElement("Usuario")]
         public string User { get; set; } //En espanol en la BD
         [BsonElement("Contrasena")]
-        public string Contrasena { get; set; }
+        public List<byte> Contrasena { get; set; }
         [BsonElement("Edad")]
         public string Edad { get; set; }
+        [BsonElement("Token")]
+        public string Token { get; set; }
 
     }
 }

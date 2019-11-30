@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Front.Models.Conversacion>
+
+@{
+    ViewData["Title"] = "ObtenerChats";
+}
+
+<h1>ObtenerChats</h1>
+
+<table class="table">
+    <thead>
+        <tr>            
+            <th>
+                @Html.DisplayNameFor(model => model.Remitente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Destinatario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>            
+            <td>
+                @Html.DisplayFor(modelItem => item.Remitente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Destinatario)
+            </td>
+            <td>
+                @Html.ActionLink("Acceder", "VisualizarChat", new {Id=item.Id }) 
+        </tr>
+}
+    </tbody>
+</table>

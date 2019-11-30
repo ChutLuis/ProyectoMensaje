@@ -1,0 +1,11 @@
+C:\Users\Luis\Source\Repos\MensajeApi\Metodos\bin\Debug\Metodos.dll
+C:\Users\Luis\Source\Repos\MensajeApi\Metodos\bin\Debug\Metodos.pdb
+C:\Users\Luis\Source\Repos\MensajeApi\Metodos\obj\Debug\Metodos.csprojAssemblyReference.cache
+C:\Users\Luis\Source\Repos\MensajeApi\Metodos\obj\Debug\Metodos.dll
+C:\Users\Luis\Source\Repos\MensajeApi\Metodos\obj\Debug\Metodos.pdb
+C:\Users\Luis\Source\Repos\MensajeApi\Metodos\bin\Debug\Metodos.dll.config
+C:\Users\Luis\Source\Repos\MensajeApi\Metodos\bin\Debug\EntityFramework.dll
+C:\Users\Luis\Source\Repos\MensajeApi\Metodos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Luis\Source\Repos\MensajeApi\Metodos\bin\Debug\EntityFramework.xml
+C:\Users\Luis\Source\Repos\MensajeApi\Metodos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Luis\Source\Repos\MensajeApi\Metodos\obj\Debug\Metodos.csproj.CopyComplete

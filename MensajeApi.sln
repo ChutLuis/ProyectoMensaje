@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MensajeApi", "MensajeApi\MensajeApi.csproj", "{56B63ABF-F2A4-46AD-936A-2077D078BBF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MensajeApi", "MensajeApi\MensajeApi.csproj", "{56B63ABF-F2A4-46AD-936A-2077D078BBF0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CifradoLab", "..\SDES\LabCifrado\CifradoLab\CifradoLab.csproj", "{840EB107-DC27-420A-A30B-F139CF02DC46}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Front", "Front\Front.csproj", "{CC72C9CE-BECF-4F7F-8E23-D3F79C7DFFFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metodos", "Metodos\Metodos.csproj", "{CAABDB37-64C1-48CC-B45F-9D0B3E9B9AA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{56B63ABF-F2A4-46AD-936A-2077D078BBF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56B63ABF-F2A4-46AD-936A-2077D078BBF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56B63ABF-F2A4-46AD-936A-2077D078BBF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{840EB107-DC27-420A-A30B-F139CF02DC46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{840EB107-DC27-420A-A30B-F139CF02DC46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{840EB107-DC27-420A-A30B-F139CF02DC46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{840EB107-DC27-420A-A30B-F139CF02DC46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC72C9CE-BECF-4F7F-8E23-D3F79C7DFFFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC72C9CE-BECF-4F7F-8E23-D3F79C7DFFFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC72C9CE-BECF-4F7F-8E23-D3F79C7DFFFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC72C9CE-BECF-4F7F-8E23-D3F79C7DFFFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAABDB37-64C1-48CC-B45F-9D0B3E9B9AA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAABDB37-64C1-48CC-B45F-9D0B3E9B9AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAABDB37-64C1-48CC-B45F-9D0B3E9B9AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAABDB37-64C1-48CC-B45F-9D0B3E9B9AA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

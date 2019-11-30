@@ -29,7 +29,11 @@
         },
         "frameworks": {
           "netcoreapp3.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Luis\\Source\\Repos\\MensajeApi\\Metodos\\Metodos.csproj": {
+                "projectPath": "C:\\Users\\Luis\\Source\\Repos\\MensajeApi\\Metodos\\Metodos.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -41,9 +45,35 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Microsoft.Extensions.Options": {
               "target": "Package",
               "version": "[3.0.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.0.0, )"
             },
             "MongoDB.Bson": {
               "target": "Package",
@@ -52,6 +82,10 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.9.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[5.6.0, )"
             }
           },
           "imports": [
@@ -74,6 +108,17 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "C:\\Users\\Luis\\Source\\Repos\\MensajeApi\\Metodos\\Metodos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Luis\\Source\\Repos\\MensajeApi\\Metodos\\Metodos.csproj",
+        "projectName": "Metodos",
+        "projectPath": "C:\\Users\\Luis\\Source\\Repos\\MensajeApi\\Metodos\\Metodos.csproj"
+      },
+      "frameworks": {
+        "net472": {}
       }
     }
   }

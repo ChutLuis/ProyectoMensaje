@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Front.Models.SubmitMensaje>
+
+@{
+    ViewData["Title"] = "VisualizarChat";
+}
+
+<h1>VisualizarChat</h1>
+@foreach (var item in Model)
+{
+    <text> @item.Emisor:@item.Message </text>
+    <br/>
+}
+
+<div class="form-horizontal" style="padding-left:400px">
+    <div class="row">
+        <div class="col-md-4">
+            <form method="post" enctype="multipart/form-data" asp-controller="LogIn" asp-action="NuevoMensaje">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label a class="control-label">Ingrese Su Mensaje</label>
+                    <input  class="form-control" name="Mensaje" required />
+                    <span class="text-danger"></span>
+                </div>                                
+                <div class="form-group">
+                    <input type="submit" value="Upload" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Front.Models.SubmitModel>
+
+@{
+    ViewData["Title"] = "VistaLlenarLista";
+}
+
+<h1>VistaLlenarLista</h1>
+
+<table class="table">
+    <thead>
+        <tr>            
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Edad)
+            </th>
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>            
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.Edad)
+            </td>
+           
+            <td>
+                @Html.ActionLink("Crear Chat", "CrearChat","LogIn", new { User=item.User })               
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<p>
+    <a asp-action="Create">Regresar al Menu Principal</a>
+</p>
